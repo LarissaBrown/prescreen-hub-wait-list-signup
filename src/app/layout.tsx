@@ -30,6 +30,7 @@ export default function RootLayout({
           src="https://www.google.com/recaptcha/api.js"
           strategy="beforeInteractive"
         />
+        {/* <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc1570qAAAAAIpl5jaEiL09WsagYQTS0gqaCe1i"></script> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
