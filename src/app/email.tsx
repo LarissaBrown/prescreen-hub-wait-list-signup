@@ -5,6 +5,7 @@ import { addToWaitlist } from './actions/waitlist'
 
 declare global {
   interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     grecaptcha: any
   }
 }
@@ -15,9 +16,9 @@ export default function Email() {
   useEffect(() => {
     // Render reCAPTCHA when component mounts
     if (recaptchaRef.current) {
-      window.grecaptcha.render(recaptchaRef.current, {
-        sitekey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
-      })
+        window.grecaptcha.render(recaptchaRef.current, {
+          sitekey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+        })
     }
   }, [])
 
@@ -52,7 +53,7 @@ export default function Email() {
             type="text"
             name="firstName"
             id="firstName"
-            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 sm:text-sm px-4 py-3 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm px-4 py-3 dark:bg-slate-700 dark:border-slate-600 dark:text-white"
             placeholder="First name"
             required
           />
@@ -65,7 +66,7 @@ export default function Email() {
             type="text"
             name="lastName"
             id="lastName"
-            className="block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 sm:text-sm px-4 py-3 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm px-4 py-3 dark:bg-slate-700 dark:border-slate-600 dark:text-white"
             placeholder="Last name"
             required
           />
@@ -79,7 +80,7 @@ export default function Email() {
           type="email"
           name="email"
           id="email"
-          className="block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 sm:text-sm px-4 py-3 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+          className="block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm px-4 py-3 dark:bg-slate-700 dark:border-slate-600 dark:text-white"
           placeholder="Enter your email address"
           required
         />
@@ -87,7 +88,7 @@ export default function Email() {
       
       <button
         type="submit"
-        className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-600 shadow-sm hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:mt-0 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto dark:bg-purple-500 dark:hover:bg-purple-400"
+        className="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto dark:bg-indigo-500 dark:hover:bg-indigo-400"
       >
         Join Waitlist
       </button>
