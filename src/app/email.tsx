@@ -42,7 +42,7 @@ export default function Email() {
   }
 
   return (
-    <form action={handleSubmit} className="flex flex-col gap-3 w-full bg-white bg-opacity-90 rounded-xl p-8 shadow-2xl z-10">
+    <form action={handleSubmit} className="flex flex-col gap-3 w-full bg-orange-800 bg-opacity-60 rounded-xl p-8 shadow-2xl z-10">
       <div className="flex flex-col sm:flex-row gap-3">
         <div className="flex-1">
           <label htmlFor="firstName" className="sr-only">

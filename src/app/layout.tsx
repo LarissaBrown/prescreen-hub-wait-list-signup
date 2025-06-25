@@ -34,7 +34,7 @@ export default function RootLayout({
         {/* <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc1570qAAAAAIpl5jaEiL09WsagYQTS0gqaCe1i"></script> */}
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-violet-50 to-white dark:from-slate-900 dark:to-slate-800 light: from-slate-900 light: to-slate-800`}
       >
         {children}
       </body>

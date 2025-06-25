@@ -7,18 +7,18 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
           {/* Hero Section with Background Image */}
-          <div className="absolute inset-0 z-0">
+          <div className="absolute mt-20 inset-0 z-0">
             <Image
               src="/images/avatars-hero.png"
               alt="Avatars Interviewing hero background"
               fill
-              className="object-cover opacity-60"
+              className="object-cover opacity-80"
               priority
             />
           </div>
 
           <div className="relative z-10 text-center pt-20 pb-16 sm:pt-24 sm:pb-20">
-            <div className="inline-block bg-white bg-opacity-90 rounded-xl p-8 shadow-2xl z-10">
+            <div className="inline-block bg-white bg-opacity-30 rounded-xl p-8 shadow-2xl z-10">
               <div className="inline-flex ml-50% mb-10 items-center justify-center rounded-md bg-slate-800 p-3 ">
                 <Image
                   src="/images/prescreen-hub-logo.png"
@@ -32,7 +32,7 @@ export default function Home() {
                 <span className="block">Maximize Your Interviews</span>
                 <span className="block text-violet-600 dark:text-violet-400">Make A Great Impression</span>
               </h1>
-              <h3 className="mt-6 max-w-2xl mx-auto text-lg text-slate-800 dark:text-slate-300">
+              <h3 className="mt-6 max-w-2xl mx-auto text-xl font-bold text-black dark:text-slate-300">
                 Join the waitlist for the revolutionary service that helps job candidates showcase their potential. 
                 Get early access and be the first to transform your employment experience.
               </h3>
