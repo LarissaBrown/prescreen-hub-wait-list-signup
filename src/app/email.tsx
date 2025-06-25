@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import { addToWaitlist } from './actions/waitlist'
 
 declare global {
@@ -13,18 +13,17 @@ declare global {
 export default function Email() {
   const recaptchaRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    // Render reCAPTCHA when component mounts
-    if (recaptchaRef.current) {
-        window.grecaptcha.render(recaptchaRef.current, {
-          sitekey: process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
-        })
-    }
-  }, [])
-
   async function handleSubmit(formData: FormData) {
+
+    
     try {
-      const token = window.grecaptcha.getResponse()
+
+     
+      const token = await window.grecaptcha.execute(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY, {
+        action: 'LOGIN',
+      });
+      console.log('reCAPTCHA token:', token);
+      
       if (!token) {
         alert('Please complete the reCAPTCHA')
         return

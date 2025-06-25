@@ -12,6 +12,7 @@ async function verifyRecaptcha(token: string) {
 	})
 
 	const data = await response.json()
+	console.log('reCAPTCHA verification response:', data)
 	return data.success
 }
 

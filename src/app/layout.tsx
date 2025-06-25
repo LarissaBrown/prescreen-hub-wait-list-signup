@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Book Your Band",
-  description: "Make More money booking your band",
+  title: "Schedule your Future",
+  description: "Expedite your next best job.",
 };
 
 export default function RootLayout({
@@ -27,9 +27,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <Script
-          src="https://www.google.com/recaptcha/api.js"
+          src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
           strategy="beforeInteractive"
         />
+
         {/* <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc1570qAAAAAIpl5jaEiL09WsagYQTS0gqaCe1i"></script> */}
       </head>
       <body

@@ -9,7 +9,7 @@ export default function Home() {
           {/* Hero Section with Background Image */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/avatars_hero.png"
+              src="/images/avatars-hero.png"
               alt="Avatars Interviewing hero background"
               fill
               className="object-cover opacity-60"
@@ -33,7 +33,7 @@ export default function Home() {
             </h1>
             
             <h3 className="mt-6 max-w-2xl mx-auto text-lg text-slate-800 dark:text-slate-300">
-              Join the waitlist for the revolutionary service that helps job candidates maximize their potential. 
+              Join the waitlist for the revolutionary service that helps job candidates showcase their potential. 
               Get early access and be the first to transform your employment experience.
             </h3>
 
@@ -57,7 +57,7 @@ export default function Home() {
                     </div>
                     <h3 className="mt-8 text-lg font-medium text-slate-900 dark:text-white tracking-tight">Maximize Time</h3>
                     <p className="mt-2 text-base text-slate-500 dark:text-slate-400">
-                      Effortlessly book services with Calendly.
+                      Effortlessly book and pay for services with Calendly.
                     </p>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function Home() {
                     </div>
                     <h3 className="mt-8 text-lg font-medium text-slate-900 dark:text-white tracking-tight">Showcase YOU and Your Skills</h3>
                     <p className="mt-2 text-base text-slate-500 dark:text-slate-400">
-                      Capture the best of your soft and technical skills showcasing your employment potential. 
+                      Capture the best of your soft and technical skills enhancing your employment potential. 
                     </p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export default function Home() {
                     </div>
                     <h3 className="mt-8 text-lg font-medium text-slate-900 dark:text-white tracking-tight">Own Unique Video Interviews</h3>
                     <p className="mt-2 text-base text-slate-500 dark:text-slate-400">
-                      Connect your unique video interviews with the employment market. 
+                      Connect your personalized video interviews with the employment market. 
                     </p>
                   </div>
                 </div>
