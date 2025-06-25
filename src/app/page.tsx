@@ -17,9 +17,9 @@ export default function Home() {
             />
           </div>
 
-          <div className="relative z-10 text-center pt-20 pb-16 sm:pt-24 sm:pb-20">
-            <div className="inline-block bg-white bg-opacity-30 rounded-xl p-8 shadow-2xl z-10">
-              <div className="inline-flex ml-50% mb-10 items-center justify-center rounded-md bg-slate-800 p-3 ">
+          <div className="relative z-10 text-center pt-8 pb-8 sm:pt-10 sm:pb-10">
+            <div className="inline-block bg-white bg-opacity-30 rounded-xl p-2 xs:p-4 sm:p-6 md:p-8 shadow-2xl z-10 w-full max-w-3xl mx-auto">
+              <div className="inline-flex ml-50% mb-6 items-center justify-center rounded-md bg-slate-800 p-2 sm:p-3 ">
                 <Image
                   src="/images/prescreen-hub-logo.png"
                   alt="Prescreen Hub logo icon"
@@ -28,20 +28,20 @@ export default function Home() {
                   className="text-white"
                 />
               </div>
-              <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl md:text-6xl">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">
                 <span className="block">Maximize Your Interviews</span>
                 <span className="block text-violet-600 dark:text-violet-400">Make A Great Impression</span>
               </h1>
-              <h3 className="mt-6 max-w-2xl mx-auto text-xl font-bold text-black dark:text-slate-300">
+              <h3 className="mt-4 sm:mt-6 max-w-2xl mx-auto text-base sm:text-lg md:text-xl font-bold text-black dark:text-slate-300">
                 Join the waitlist for the revolutionary service that helps job candidates showcase their potential. 
                 Get early access and be the first to transform your employment experience.
               </h3>
 
-              <div className="mt-10 max-w-md mx-auto sm:max-w-lg">
+              <div className="mt-6 max-w-md mx-auto sm:max-w-lg">
                 <Email />
               </div>
 
-              <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
+              <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
                 {/* Feature Cards */}
                 <div className="pt-6">
                   <div className="flow-root bg-white dark:bg-slate-800 rounded-lg px-6 pb-8 shadow-lg">

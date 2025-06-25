@@ -37,12 +37,16 @@ export default function Email() {
         window.grecaptcha.reset()
       }
     } catch (error) {
-      console.error('Error:', error)
+      if (error instanceof Error) {
+        console.error('Error:', error.message, error.stack);
+      } else {
+        console.error('Unknown error:', error);
+      }
     }
   }
 
   return (
-    <form action={handleSubmit} className="flex flex-col gap-3 w-full bg-orange-800 bg-opacity-60 rounded-xl p-8 shadow-2xl z-10">
+    <form action={handleSubmit} className="flex flex-col gap-3 w-full max-w-lg mx-auto bg-orange-800 bg-opacity-60 rounded-xl p-2 xs:p-4 sm:p-6 md:p-8 shadow-2xl z-10">
       <div className="flex flex-col sm:flex-row gap-3">
         <div className="flex-1">
           <label htmlFor="firstName" className="sr-only">
